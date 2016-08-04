@@ -1,0 +1,24 @@
+{
+  "name": "gulp-starter-pack",
+  "version": "1.0.0",
+  "description": "gulp starter pack for easier project liftoff",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vlad-saling/gulp-starter-pack.git"
+  },
+  "keywords": [
+    "gulp",
+    "starter",
+    "pack"
+  ],
+  "author": "vlad saling",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlad-saling/gulp-starter-pack/issues"
+  },
+  "homepage": "https://github.com/vlad-saling/gulp-starter-pack#readme"
+}
