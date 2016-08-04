@@ -21,7 +21,7 @@ Run tasks via `gulp [taskname]`. See following list for available tasks:
 - `sasslint` 
 - `sass:dev`
 - `sass:prod` 
-- `css:dev'
+- `css:dev`
 - `css:prod`
 - `scripts:dev`
 - `scripts:prod` 
