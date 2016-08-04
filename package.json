@@ -20,5 +20,11 @@
   "bugs": {
     "url": "https://github.com/vlad-saling/gulp-starter-pack/issues"
   },
-  "homepage": "https://github.com/vlad-saling/gulp-starter-pack#readme"
+  "homepage": "https://github.com/vlad-saling/gulp-starter-pack#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-sass": "^2.3.2",
+    "jshint": "^2.9.2"
+  }
 }
