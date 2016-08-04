@@ -4,7 +4,8 @@ Gulp tasks and workflow modules pack for quicker initial setup.
 
 ## Notes
 
-Dist files are generated either to build-dev folder or build-prod based on the type of task you call.
+- Dist files are generated either to build-dev folder or build-prod based on the type of task you call.
+- Order of JS files to concat can be defined in gulpfile.js
 
 ## Pre-requisits:
 
@@ -28,4 +29,6 @@ Run tasks via `gulp [taskname]`. See following list for available tasks:
 - `copy:prod` 
 - `build:dev` 
 - `build:prod` 
+
+
 
