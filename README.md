@@ -25,9 +25,9 @@ Gulp tasks and workflow modules pack for quicker initial setup.
 
 Run tasks via `gulp [taskname]`. See following list for available tasks:
 
-- `lint`
-- `watch:dev`  
-- `sasslint`
+- `lint` 
+- `watch:dev`
+- `sasslint` 
 - `sass:dev`
 - `sass:prod` 
 - `css:dev'
