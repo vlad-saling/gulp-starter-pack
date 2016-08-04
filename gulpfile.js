@@ -65,6 +65,11 @@ gulp.task('copy:prod', function() {
     gulp.src(['src/html/**/*']).pipe(gulp.dest('build-prod/html'));
 });
 
+// Rerun the task when a file changes
+gulp.task('watch', function() {
+  gulp.watch('src/**/*', ['build:dev']);
+});
+
 // Default Task
 gulp.task('css:dev', ['sasslint', 'sass:dev']);
 gulp.task('css:prod', ['sasslint', 'sass:prod']);
