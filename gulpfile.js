@@ -7,7 +7,6 @@ var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var sassLint = require('gulp-sass-lint');
-var copyDir = require('copy-dir');
 
 // Lint Task
 gulp.task('lint', function() {
