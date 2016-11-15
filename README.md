@@ -1,34 +1,113 @@
-# gulp-starter-pack
+# Gulp starter pack 
 
-Gulp tasks and workflow modules pack for quicker initial setup.
+## Purpose
 
-## Notes
-
-- Dist files are generated either to build-dev folder or build-prod based on the type of task you call.
-- Order of JS files to concat can be defined in gulpfile.js
+To kick-start any web project.
 
 ## Pre-requisits:
 
 - node.js
-- `npm install -g gulp`
+- gulp
+
+## Usage
+
+1) Fork and/or clone this repository  
+2) run `npm install`  
+3) run `gulp server`
+
+Dev server starts on port 8080. It's wise to check if that port is not already occupied. In case you need to change it, see `connect` task in `gulpfile.js`. 
+
+
+
+### JavaScript
+
+JavaScript call is included in `src/html/header.hbs`. If you want to add or modify JavaScript calls, do it in mentioned include. However, for JavaScript you will also need to modify `gulpfile.js` in order to be included into build. Look for tasks `scripts:dev` and `scripts:prod`. You'll see `gulp.src(['src/js/script.js','src/js/module/module.js'])` there. This line defines both which JS files should be processed and in what order they should be merged. In this case, `script.js` and `module.js` will be concatenated into one file with `script.js` content being the first in file and `module.js` added after that.
+
+## Generating static pages
+
+This toolbox comes with Assemble engine for generating static pages out of HBS templates and partials. 
 
 ## Running tasks:
 
 Run tasks via `gulp [taskname]`. See following list for available tasks:
 
-- `lint` 
-- `watch`
-- `sasslint` 
-- `sass:dev`
-- `sass:prod` 
-- `css:dev`
-- `css:prod`
-- `scripts:dev`
-- `scripts:prod` 
-- `copy:dev` 
-- `copy:prod` 
-- `build:dev` 
-- `build:prod` 
+<table>
+    <tr>
+        <td><code>server</code></td>
+        <td>Starts web server and watch for entire SRC directory. The only task you should ever need for development.</td>
+    </tr>
+    <tr>
+        <td><code>connect</code></td>
+        <td>Starts web server.</td>
+    </tr>
+    <tr>
+            <td><code>watch</code></td>
+            <td>Watch task for entire SRC</td>
+    </tr>
+    <tr>
+            <td><code>sass:lint</code></td>
+            <td>Linter for SASS.</td>
+    </tr> 
+    <tr>
+            <td><code>sass:dev</code></td>
+            <td>Dev build of SASS.</td>
+    </tr>
+    <tr>
+            <td><code>sass:prod</code></td>
+            <td>Production build of SASS - optimized.</td>
+    </tr> 
+    <tr>
+            <td><code>css:dev</code></td>
+            <td>SASS lint and css dev build.</td>
+    </tr>
+    <tr>
+            <td><code>css:prod</code></td>
+            <td>see sass:prod</td>
+    </tr>
+    <tr>
+            <td><code>scripts:lint</code></td>
+            <td>JavaScript linter</td>
+    </tr> 
+    <tr>
+            <td><code>scripts:dev</code></td>
+            <td>JavaScript dev build.</td>
+    </tr>
+    <tr>
+            <td><code>scripts:prod</code></td>
+            <td>JavaScript prod build.</td>
+    </tr> 
+    <tr>
+            <td><code>render:dev</code></td>
+            <td>Render HTML from HBS to build-dev.</td>
+    </tr> 
+    <tr>
+            <td><code>render:prod</code></td>
+            <td>Render HTML from HBS copy files to build-prod.</td>
+    </tr>
+    <tr>
+            <td><code>copy:dev</code></td>
+            <td>Plain copy of HTML files into build-dev.</td>
+    </tr> 
+    <tr>
+            <td><code>copy:prod</code></td>
+            <td>Plain copy of HTML files into build-prod.</td>
+    </tr> 
+    <tr>
+            <td><code>build:dev</code></td>
+            <td>Run dev build. CSS, JS, render HTML from HBS.</td>
+    </tr> 
+    <tr>
+            <td><code>build:prod</code></td>
+            <td>Run prod build. CSS, JS, render HTML from HBS.</td>
+    </tr> 
+      <tr>
+            <td><code>build-static:dev</code></td>
+            <td>Run dev build. CSS, JS, plain HTML copy.</td>
+    </tr> 
+    <tr>
+            <td><code>build-static:prod</code></td>
+            <td>Run prod build. CSS, JS, plain HTML copy.</td>
+    </tr> 
 
-
+</table>
 
