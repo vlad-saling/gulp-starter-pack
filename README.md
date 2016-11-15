@@ -18,11 +18,6 @@ To kick-start any web project.
 Dev server starts on port 8080. It's wise to check if that port is not already occupied. In case you need to change it, see `connect` task in `gulpfile.js`. 
 
 
-
-### JavaScript
-
-JavaScript call is included in `src/html/header.hbs`. If you want to add or modify JavaScript calls, do it in mentioned include. However, for JavaScript you will also need to modify `gulpfile.js` in order to be included into build. Look for tasks `scripts:dev` and `scripts:prod`. You'll see `gulp.src(['src/js/script.js','src/js/module/module.js'])` there. This line defines both which JS files should be processed and in what order they should be merged. In this case, `script.js` and `module.js` will be concatenated into one file with `script.js` content being the first in file and `module.js` added after that.
-
 ## Generating static pages
 
 This toolbox comes with Assemble engine for generating static pages out of HBS templates and partials. 
